@@ -1379,18 +1379,22 @@
 		<field name="model">medical.hospital.bed</field>
 		<field name="type">form</field>
 		<field name="arch" type="xml">
-			<form string="Bed">
-				<field name="name" required="1"></field>
-				<field name="ward"></field>
-				<field name="bed_type"></field>
-				<field name="telephone_number"></field>
-				<field name="state"></field>
+                    <form string="Bed">
+                      <sheet>
+                        <group colspan="2" col="2" string="Bedding details">
+                            <field name="name" required="1"></field>
+                            <field name="ward"></field>
+                            <field name="bed_type"></field>
+                            <field name="telephone_number"></field>
+                            <field name="state"></field>
+                        </group>
 
-				<newline/>
-				<group colspan="4">
-					<field name="extra_info"></field>
-				</group>
-			</form>
+                        <newline/>
+                            <group colspan="4">
+                                    <field name="extra_info"></field>
+                            </group>
+                        </sheet>
+                    </form>
 		</field>
 	</record>
 
