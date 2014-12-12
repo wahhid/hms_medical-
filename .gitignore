@@ -1,0 +1,6 @@
+# Ignoring binary files
+*.py[co]
+
+# Text editor temporary files
+*.swp
+*~
